@@ -5,7 +5,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.application import MIMEApplication
 
 # Load the Excel file with no header, assuming data starts from B1 and C1
-df = pd.read_excel('contacts.xlsx', header=None)
+df = pd.read_excel('contacts2.xlsx', header=None)
 
 # Manually set column names
 df.columns = ['Email', 'Name']
@@ -13,8 +13,8 @@ df.columns = ['Email', 'Name']
 # Email configuration
 smtp_server = 'smtp.gmail.com'  # Gmail SMTP server
 smtp_port = 587  # Port for TLS
-sender_email = 'guptnuj@gmail.com'  # Your email address
-password = 'qfkg jzet pflo zeey'  # Your app password
+sender_email = 'anujgupt869@gmail.com'  # Your email address
+password = 'kifk zvfn wjsn ctcp'  # Your app password
 
 # Create a SMTP session
 server = smtplib.SMTP(smtp_server, smtp_port)
@@ -36,7 +36,7 @@ for index, row in df.iterrows():
     <body>
         <p>Hello {name},</p>
 
-        <p>I hope you’re doing well.</p>
+        <p>I hope this email finds you well.</p>
 
         <p>I’m Anuj Gupta, with over 3.5+ years of hands-on experience in DevOps and Cloud technologies like
         GCP, Kubernetes, Docker, Jenkins, Terraform, Bash scripting, and Linux Systems.</p>
@@ -45,7 +45,8 @@ for index, row in df.iterrows():
 
         <p>Thanks & Regards,<br>
         Anuj Gupta<br>
-        Email: guptanujk@gmail.com<br>
+        Notice Period: LWD 20 Feb<br>
+        Email: guptnuj@gmail.com<br>
         Phone: +91 9908992784</p>
     </body>
     </html>
