@@ -13,8 +13,8 @@ df.columns = ['Email', 'Name']
 # Email configuration
 smtp_server = 'smtp.gmail.com'  # Gmail SMTP server
 smtp_port = 587  # Port for TLS
-sender_email = 'anujgupt869@gmail.com'  # Your email address
-password = 'kifk zvfn wjsn ctcp'  # Your app password
+sender_email = 'enter email'  # Your email address
+password = 'enter app password'  # Your app password
 
 # Create a SMTP session
 server = smtplib.SMTP(smtp_server, smtp_port)
